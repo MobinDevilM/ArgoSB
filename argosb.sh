@@ -285,9 +285,7 @@ tup=tuptargo
 fi
 if [ -n "$anp" ]; then
 anp=anpt
-if [ -z "$port_an" ]; then
-port_an=$(shuf -i 10000-65535 -n 1)
-fi
+port_an=443
 echo "$port_an" > "$HOME/agsb/port_an"
 echo "Anytls端口：$port_an"
 cat >> "$HOME/agsb/sb.json" <<EOF
